@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical finder for Japan-exclusive and hard-to-find stationery, inks, fountain pens and notebooks.">
+  <title>Japan Stationery Finder 🇯🇵</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">JAPAN STATIONERY FINDER</div>
+      <h1>Find stationery<br><span>worth bringing home.</span></h1>
+      <p class="lede">Japan-only, store-exclusive, regional and limited stationery worth hunting down while you’re here.</p>
+      <div class="hero-note">
+        <span>🇯🇵</span>
+        <div><strong>Not everything is “Japan exclusive.”</strong><br>
+        We label the kind of exclusivity so you know what you’re actually hunting for.</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="finder">
+      <div class="toolbar">
+        <div>
+          <p class="section-kicker">THE FINDER</p>
+          <h2 id="resultTitle">All finds</h2>
+        </div>
+        <div class="count" id="count"></div>
+      </div>
+
+      <div class="filters" id="filters" aria-label="Filters"></div>
+
+      <div class="search-row">
+        <label class="search">
+          <span>⌕</span>
+          <input id="search" type="search" placeholder="Search Kobe, ink, Sailor, notebook..." autocomplete="off">
+        </label>
+        <select id="sort" aria-label="Sort products">
+          <option value="priority">Featured</option>
+          <option value="brand">Brand</option>
+          <option value="price-low">Price: low → high</option>
+          <option value="price-high">Price: high → low</option>
+        </select>
+      </div>
+
+      <div id="brandGroups"></div>
+      <div id="empty" class="empty" hidden>No finds match those filters.</div>
+    </section>
+
+    <section class="guide">
+      <p class="section-kicker">HOW TO READ THIS</p>
+      <div class="guide-grid">
+        <div><span class="dot confirmed"></span><strong>Confirmed</strong><p>We found evidence from an official source.</p></div>
+        <div><span class="dot"></span><strong>Store Exclusive</strong><p>Sold as an original or bespoke item by a particular shop.</p></div>
+        <div><span class="dot"></span><strong>Limited</strong><p>Availability may be seasonal, event-based or finite.</p></div>
+        <div><span class="dot"></span><strong>Proxy note</strong><p>Some products may require a Japan-based buyer or forwarding service.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>Japan Stationery Finder</strong><br><span>Independent guide • Last data check: 2026-09-03</span></div>
+      <div class="footer-links"><a href="https://www.nagasawa-shop.jp/kobeink" target="_blank" rel="noopener">NAGASAWA</a><a href="https://www.kingdomnote.com/html/koimari/index.html" target="_blank" rel="noopener">KINGDOM NOTE</a><a href="https://www.ancora-shop.jp/" target="_blank" rel="noopener">ANCORA</a><a href="https://www.travelers-company.com/" target="_blank" rel="noopener">TRAVELER'S COMPANY</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
