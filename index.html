@@ -3,70 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A practical finder for Japan-exclusive and hard-to-find stationery, inks, fountain pens and notebooks.">
-  <title>Japan Stationery Finder 🇯🇵</title>
+  <meta name="description" content="Find Japan-exclusive and hard-to-find stationery, including limited fountain pens, inks, notebooks and store exclusives in Tokyo, Kyoto, Kobe and across Japan.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Japan Stationery Finder">
+  <meta name="theme-color" content="#202020">
+
+  <link rel="canonical" href="https://japanstationeryfinder.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Japan Stationery Finder">
+  <meta property="og:title" content="Japan Stationery Finder | Japan-exclusive stationery">
+  <meta property="og:description" content="Find Japan-exclusive and hard-to-find stationery worth bringing home from Japan.">
+  <meta property="og:url" content="https://japanstationeryfinder.github.io/">
+  <meta property="og:image" content="https://japanstationeryfinder.github.io/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Japan Stationery Finder | Japan-exclusive stationery">
+  <meta name="twitter:description" content="Find Japan-exclusive and hard-to-find stationery worth bringing home from Japan.">
+  <meta name="twitter:image" content="https://japanstationeryfinder.github.io/og-image.svg">
+  <title>Japan Stationery Finder | Japan-exclusive stationery, inks & fountain pens</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GS0C4JMMF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6GS0C4JMMF');
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="hero">
     <div class="wrap">
-      <div class="eyebrow">JAPAN STATIONERY FINDER</div>
+      <div class="eyebrow">🇯🇵 JAPAN STATIONERY FINDER</div>
       <h1>Find stationery<br><span>worth bringing home.</span></h1>
-      <p class="lede">Japan-only, store-exclusive, regional and limited stationery worth hunting down while you’re here.</p>
-      <div class="hero-note">
-        <span>🇯🇵</span>
-        <div><strong>Not everything is “Japan exclusive.”</strong><br>
-        We label the kind of exclusivity so you know what you’re actually hunting for.</div>
-      </div>
+      <p class="intro">A curated finder for Japan-exclusive, store-exclusive and hard-to-find stationery. Tap any item to see where and how to buy it.</p>
     </div>
   </header>
 
   <main class="wrap">
     <section class="finder">
-      <div class="toolbar">
+      <div class="finder-head">
         <div>
-          <p class="section-kicker">THE FINDER</p>
-          <h2 id="resultTitle">All finds</h2>
+          <p class="kicker">FINDER</p>
+          <h2>What are you looking for?</h2>
         </div>
-        <div class="count" id="count"></div>
+        <div id="resultCount" class="result-count"></div>
       </div>
 
-      <div class="filters" id="filters" aria-label="Filters"></div>
+      <div class="filters" id="filters"></div>
 
       <div class="search-row">
-        <label class="search">
-          <span>⌕</span>
-          <input id="search" type="search" placeholder="Search Kobe, ink, Sailor, notebook..." autocomplete="off">
-        </label>
-        <select id="sort" aria-label="Sort products">
-          <option value="priority">Featured</option>
-          <option value="brand">Brand</option>
-          <option value="price-low">Price: low → high</option>
-          <option value="price-high">Price: high → low</option>
-        </select>
+        <input id="search" type="search" placeholder="Search product, brand, city..." aria-label="Search products">
+        <button id="clearSearch" type="button" class="clear">Clear</button>
       </div>
 
-      <div id="brandGroups"></div>
-      <div id="empty" class="empty" hidden>No finds match those filters.</div>
-    </section>
-
-    <section class="guide">
-      <p class="section-kicker">HOW TO READ THIS</p>
-      <div class="guide-grid">
-        <div><span class="dot confirmed"></span><strong>Confirmed</strong><p>We found evidence from an official source.</p></div>
-        <div><span class="dot"></span><strong>Store Exclusive</strong><p>Sold as an original or bespoke item by a particular shop.</p></div>
-        <div><span class="dot"></span><strong>Limited</strong><p>Availability may be seasonal, event-based or finite.</p></div>
-        <div><span class="dot"></span><strong>Proxy note</strong><p>Some products may require a Japan-based buyer or forwarding service.</p></div>
-      </div>
+      <div id="productList" class="product-list" aria-live="polite"></div>
     </section>
   </main>
 
   <footer>
     <div class="wrap footer-inner">
-      <div><strong>Japan Stationery Finder</strong><br><span>Independent guide • Last data check: 2026-09-03</span></div>
-      <div class="footer-links"><a href="https://www.nagasawa-shop.jp/kobeink" target="_blank" rel="noopener">NAGASAWA</a><a href="https://www.kingdomnote.com/html/koimari/index.html" target="_blank" rel="noopener">KINGDOM NOTE</a><a href="https://www.ancora-shop.jp/" target="_blank" rel="noopener">ANCORA</a><a href="https://www.travelers-company.com/" target="_blank" rel="noopener">TRAVELER'S COMPANY</a></div>
+      <div>
+        <strong>Japan Stationery Finder</strong>
+        <p>Curated in Japan. Always check official stores before travelling.</p>
+      </div>
+      <div class="footer-note">Prices, availability and exclusivity can change.</div>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
