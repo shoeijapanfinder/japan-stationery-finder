@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://japanstationeryfinder.github.io/sitemap.xml
+Sitemap: https://shoeijapanfinder.github.io/japan-stationery-finder/sitemap.xml
